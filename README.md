@@ -162,7 +162,7 @@ Thus fisherexact is self-contained.
 https://en.wikipedia.org/wiki/Chi-squared_test
 
 ----
-author: Jason E. Aten, Ph.D.
+Author: Jason E. Aten, Ph.D.
 
 License: MIT
 
