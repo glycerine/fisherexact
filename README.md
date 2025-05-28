@@ -5,7 +5,7 @@ Fisher's Exact test (FET) is one of the most useful
 statistical tests[1]. A fun fact about Sir Ronald A. Fisher
 (https://en.wikipedia.org/wiki/Ronald_Fisher) is that
 based on citation counts, he is considered to be
-the single most influential scientist of all time.
+the single most influential scientist of all time[2].
 He founded the modern fields of both statistics 
 and population genetics.
 
@@ -97,6 +97,8 @@ https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mat
 [1] Fisher, R. A. (1935).  The logic of inductive inference.  _Journal
  of the Royal Statistical Society Series A_, *98*, 39-54.
 http://csyue.nccu.edu.tw/ch/The%20Logic%20of%20Inductive%20Inference.pdf
+
+[2] https://simplystatistics.org/posts/2014-02-17-repost-ronald-fisher-is-one-of-the-few-scientists-with-a-legit-claim-to-most-influential-scientist-ever/
 
 ------
 # alternative hypotheses
