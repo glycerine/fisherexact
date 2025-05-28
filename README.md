@@ -15,7 +15,8 @@ The story of the invention of the FET makes it memorable[3],
 and helps us define the contigency table.
 
 Fisher, drawn by a treasure trove of 80 years of
-unanalyzed agricultural crop data, was working at Rothamsted
+unanalyzed agricultural crop data, was working 
+as a research scientist at Rothamsted
 Experimental Station, in Hertfordshire, in 1919. One
 day, while making tea, he offered a colleague a cup
 of tea he had freshly poured. She declined, saying 
@@ -23,7 +24,7 @@ she preferred the taste when the milk was first poured
 into the cup before the tea. She said she could
 tell the difference. Fisher scoffed at this idea.
 
-Overhearing this, another colleague said, "let's 
+Overhearing this, another scientist said, "let's 
 test her!" After eight randomly ordered cups
 were correctly identified blindfolded, as either
 "milk-first" or "tea-first", Fisher was driven to 
