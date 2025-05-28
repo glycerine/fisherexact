@@ -12,11 +12,19 @@ to larger tables, but this
 repo only does 2x2 tables at the moment.
 
 ~~~
+// FisherExactTest22 computes Fisher's Exact test
+// for independence on a 2x2 contingency table.
 //
 // n11  n12  | n1_
 // n21  n22  | n2_
 // ----------+-----
 // n_1  n_2  | n
+//
+// is the layout assumed.
+func FisherExactTest22(n11, n12, n21, n22 int) (pvalue float64)
+
+// ChiSquaredTest22 input is the same.
+func ChiSquaredTest22(n11, n12, n21, n22 int, yates bool) (pval float64)
 ~~~
 
 The FET can be used for large and small data. 
@@ -38,6 +46,8 @@ based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen Mosher) 
 required was copied in to avoid depending
 on the full gonum library.
+
+https://en.wikipedia.org/wiki/Chi-squared_test
 
 ----
 author: Jason E. Aten, Ph.D.

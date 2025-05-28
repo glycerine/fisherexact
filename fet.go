@@ -258,7 +258,7 @@ func hypergeo_acc(n11, n1_, n_1, n int, aux *hgacc_t) float64 {
 // n_1  n_2  | n
 //
 // is the layout assumed.
-func FisherExactTest22(n11, n12, n21, n22 int) float64 {
+func FisherExactTest22(n11, n12, n21, n22 int) (pvalue float64) {
 	if n11 < 0 {
 		panic(fmt.Sprintf("n11 was %v. must be >= 0.", n11))
 	}
