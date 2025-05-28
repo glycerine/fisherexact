@@ -88,7 +88,7 @@ provide a Chi-squared test implementation
 based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen L. Moshier) 
 required was copied in to avoid depending
-on the full gonum library.
+on the large and extensive gonum library.
 
 https://en.wikipedia.org/wiki/Chi-squared_test
 
