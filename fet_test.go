@@ -27,6 +27,9 @@ func TestFET(t *testing.T) {
 		fmt.Printf("incomplete-beta(%v,%v,%v): %v\n", a, b, x, kf_betai(a, b, x)/math.Exp(kf_lgamma(a+b)-kf_lgamma(a)-kf_lgamma(b)))
 	*/
 
+	// test cases from
+	// https://github.com/samtools/htslib/commit/170047656473a7fadf9f23f3afdfac46b9c52b21
+
 	nfail := 0
 	nfail += test_fisher(2, 1, 0, 31, 1.0, 0.005347593583, 0.005347593583, 0.005347593583)
 	nfail += test_fisher(2, 1, 0, 1, 1.0, 0.5, 1.0, 0.5)
