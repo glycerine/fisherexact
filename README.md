@@ -1,4 +1,4 @@
-fisherexact: the Fisher-Exact Test in Go
+fisherexact: Fisher's Exact Test in Go
 ===========
 
 Fisher's Exact test (FET) is one of the most useful
@@ -23,6 +23,11 @@ https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 ----
 author: Jason E. Aten, Ph.D.
 
-derived from https://github.com/samtools/htslib/ (MIT license)
-
 License: MIT
+
+FET source material in C++ from https://github.com/samtools/htslib/ (MIT license)
+
+Chi-squared distribution computation copied from gonum's
+cephes package. See cephes/ for details/license(3-clause BSD).
+https://github.com/gonum/gonum/
+

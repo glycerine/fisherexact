@@ -80,3 +80,17 @@ func test_fisher(n11, n12, n21, n22 int, eleft, eright, etwo, eprob float64) (nf
 	}
 	return
 }
+
+func TestChiSquared(t *testing.T) {
+
+	n11 := 10
+	n12 := 20
+	n21 := 30
+	n22 := 40
+	yates := true
+	pvalChi2 := ChiSquaredTest22(n11, n12, n21, n22, yates)
+	//fmt.Printf("yates=%v, pval chi2 = %v\n", yates, pvalChi2)
+	if want, got := 0.5040358664525046, pvalChi2; differ(want, got) {
+		t.Fatalf("want %v, got %v", want, got)
+	}
+}
