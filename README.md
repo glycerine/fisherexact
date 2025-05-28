@@ -69,7 +69,7 @@ guesses), even if the lady
 has no predictive powers, you will see lots of variations
 where the cell counts are not exactly the
 expected 2. Summing up the probablities of
-all the possible null hypothesis tables,
+all the myriad possible null hypothesis tables (odds-ratio == 1),
 given that the marginals (the right side sums
 and bottom side sums) are fixed, is what the FET does.
 
