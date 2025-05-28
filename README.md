@@ -27,7 +27,7 @@ repo only does 2x2 tables at the moment.
 func FisherExactTest22(n11, n12, n21, n22 int) (
   less, 
   greater, 
-  two float64, // you want this, generally.
+  twoSidedPvalue float64, // you want this, generally.
   )
 
 // ChiSquaredTest22 input is the same.

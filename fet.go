@@ -261,7 +261,7 @@ func hypergeo_acc(n11, n1_, n_1, n int, aux *hgacc_t) float64 {
 //
 // Three p-values are returned, for each of three
 // alternative hypotheses.
-func FisherExactTest22(n11, n12, n21, n22 int) (less, greater, two float64) {
+func FisherExactTest22(n11, n12, n21, n22 int) (less, greater, twoSidedPvalue float64) {
 	if n11 < 0 {
 		panic(fmt.Sprintf("n11 was %v. must be >= 0.", n11))
 	}
@@ -274,7 +274,7 @@ func FisherExactTest22(n11, n12, n21, n22 int) (less, greater, two float64) {
 	if n22 < 0 {
 		panic(fmt.Sprintf("n22 was %v. must be >= 0.", n22))
 	}
-	kt_fisher_exact(n11, n12, n21, n22, &less, &greater, &two)
+	kt_fisher_exact(n11, n12, n21, n22, &less, &greater, &twoSidedPvalue)
 	return
 }
 
