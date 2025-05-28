@@ -185,7 +185,7 @@ http://csyue.nccu.edu.tw/ch/The%20Logic%20of%20Inductive%20Inference.pdf
 [4] Larntz, Kinley (1978). "Small-sample comparisons of exact levels for chi-squared goodness-of-fit statistics". Journal of the American Statistical Association. 73 (362): 253–263.
 https://www.jstor.org/stable/2286650
 
-[5] https://en.wikipedia.org/wiki/P-value
+[5] https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108#d1e167
 
 ------
 # alternative hypotheses
