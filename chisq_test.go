@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestChiSquared(t *testing.T) {
+func TestChiSquaredTest22(t *testing.T) {
 
 	n11 := 10
 	n12 := 20
