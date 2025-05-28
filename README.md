@@ -45,7 +45,11 @@ The FET here evaluates a 2x2 contingency table for independence,
 returning p-values; typically you'll use the two-sided
 p-value by default. Technically this is a test of
 conditional independence, as the marginals of the
-table are fixed and conditioned on.
+table are fixed and conditioned on. What is a p-value?
+Something Fisher invented, that's what. More detail is
+outside the scope of this introduction, as p-values are
+famously subtle and hard to convey with both 
+accuracy and brevity[5]. 
 
 The FET, like Pearson's Chi-squared test for
 categorical data, can be generalized to larger tables,
@@ -149,6 +153,8 @@ http://csyue.nccu.edu.tw/ch/The%20Logic%20of%20Inductive%20Inference.pdf
 
 [4] Larntz, Kinley (1978). "Small-sample comparisons of exact levels for chi-squared goodness-of-fit statistics". Journal of the American Statistical Association. 73 (362): 253–263.
 https://www.jstor.org/stable/2286650
+
+[5] https://en.wikipedia.org/wiki/P-value
 
 ------
 # alternative hypotheses
