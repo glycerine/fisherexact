@@ -36,7 +36,7 @@ example are "actually-milk-first", and "actually-tea-first".
 The _outcomes_ are "she-said-milk-first", and "she-said-tea-first".
 
 If we draw a square, and divide it into four quadrants,
-the verticdal axis could be labelled "actual", and the
+the vertical axis could be labelled "actual", and the
 horizontal "prediction". The two rows of the box
 correspond to the two groups (which liquid poured first). 
 The columns correspond to the two outcomes (her prediction).
