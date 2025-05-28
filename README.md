@@ -53,7 +53,7 @@ https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 
 For comparison, we provide a Chi-squared test implementation
 based on gonum/cephes calculations. The small
-cephes subpackage (Netlib code by Stephen Mosher) 
+cephes subpackage (Netlib code by Stephen L. Moshier) 
 required was copied in to avoid depending
 on the full gonum library.
 
