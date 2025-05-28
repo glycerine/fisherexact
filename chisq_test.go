@@ -1,6 +1,8 @@
 package fisherexact
 
 import (
+	"fmt"
+	"math"
 	"testing"
 )
 
@@ -46,10 +48,17 @@ func TestChiSquaredTest22(t *testing.T) {
 	}
 
 	for i, c := range cases {
-		gotPval := ChiSquaredTest22(c.dat[0], c.dat[1], c.dat[2], c.dat[3], c.yates)
+		gotChi2pval := ChiSquaredTest22(c.dat[0], c.dat[1], c.dat[2], c.dat[3], c.yates)
 		wantPval := c.xpval
-		if differ(wantPval, gotPval) {
-			t.Fatalf("case %v: want %v, got %v", i, wantPval, gotPval)
+		if differ(wantPval, gotChi2pval) {
+			t.Fatalf("case %v: want %v, got %v", i, wantPval, gotChi2pval)
+		}
+		fisherPval := FisherExactTest22(c.dat[0], c.dat[1], c.dat[2], c.dat[3])
+		diff := math.Abs(fisherPval - gotChi2pval)
+		_ = diff
+		if (fisherPval < 0.05 && gotChi2pval > 0.05) ||
+			(fisherPval > 0.05 && gotChi2pval < 0.05) {
+			fmt.Printf("case %v: diff = %v; fisherPval = %v; chi-squared pval = %v\n", i, diff, fisherPval, gotChi2pval)
 		}
 	}
 }
