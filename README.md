@@ -69,8 +69,8 @@ has no predictive power, you will see lots of variations
 where the cell counts are not exactly the
 expected 2. Summing up the probablities of
 all the possible null hypothesis tables,
-given that the marginals (the right side
-and bottom side) are fixed, is what the FET does.
+given that the marginals (the right side sums
+and bottom side sums) are fixed, is what the FET does.
 
 The FET here evaluates a 2x2 contingency table for independence,
 returning p-values; typically you'll use the two-sided
