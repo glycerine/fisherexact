@@ -93,7 +93,7 @@ two-sided):
 > The alternative for a one-sided test is based on the odds ratio,
 > so ‘alternative = "greater"’ is a test of the odds ratio being
 > bigger than ‘or’ [jea: the odds-ratio, which in this Go package is 
-> assumed = 1.0, like the default R value].
+> assumed = 1.0 under the null-hypothesis, like the default R value].
 >
 > Two-sided tests are based on the probabilities of the tables, and
 > take as ‘more extreme’ all tables with probabilities less than or
