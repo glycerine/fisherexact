@@ -260,8 +260,9 @@ func hypergeo_acc(n11, n1_, n_1, n int, aux *hgacc_t) float64 {
 // is the layout assumed.
 //
 // Three p-values are returned, for each of three
-// alternative hypotheses.
-func FisherExactTest22(n11, n12, n21, n22 int) (less, greater, twoSidedPvalue float64) {
+// alternative hypotheses. The final value
+// gives the test statistic.
+func FisherExactTest22(n11, n12, n21, n22 int) (lessPvalue, greaterPvalue, twoSidedPvalue, probCurrentTable float64) {
 	if n11 < 0 {
 		panic(fmt.Sprintf("n11 was %v. must be >= 0.", n11))
 	}
@@ -274,7 +275,35 @@ func FisherExactTest22(n11, n12, n21, n22 int) (less, greater, twoSidedPvalue fl
 	if n22 < 0 {
 		panic(fmt.Sprintf("n22 was %v. must be >= 0.", n22))
 	}
-	kt_fisher_exact(n11, n12, n21, n22, &less, &greater, &twoSidedPvalue)
+	probCurrentTable = kt_fisher_exact(n11, n12, n21, n22, &lessPvalue, &greaterPvalue, &twoSidedPvalue)
+	return
+}
+
+// TwoSidedTest22 computes Fisher's Exact test
+// for independence in a 2x2 contingency table, and
+// returns the p-value for the two-sided null hypothesis.
+//
+// n11  n12  | n1_
+// n21  n22  | n2_
+// ----------+-----
+// n_1  n_2  | n
+//
+// is the layout assumed.
+func TwoSidedTest22(n11, n12, n21, n22 int) (twoSidedPvalue float64) {
+	if n11 < 0 {
+		panic(fmt.Sprintf("n11 was %v. must be >= 0.", n11))
+	}
+	if n12 < 0 {
+		panic(fmt.Sprintf("n12 was %v. must be >= 0.", n12))
+	}
+	if n21 < 0 {
+		panic(fmt.Sprintf("n21 was %v. must be >= 0.", n21))
+	}
+	if n22 < 0 {
+		panic(fmt.Sprintf("n22 was %v. must be >= 0.", n22))
+	}
+	var lessPvalue, greaterPvalue float64
+	kt_fisher_exact(n11, n12, n21, n22, &lessPvalue, &greaterPvalue, &twoSidedPvalue)
 	return
 }
 
@@ -307,6 +336,8 @@ func kt_fisher_exact(n11, n12, n21, n22 int, _left, _right, two *float64) float6
 	q = hypergeo_acc(n11, n1_, n_1, n, &aux) // the probability of the current table
 
 	if q == 0 {
+		// handle underflow for large counts. Credit due to
+		// Rob Davies and John Marshall.
 		// https://github.com/samtools/htslib/commit/170047656473a7fadf9f23f3afdfac46b9c52b21
 		if n11*(n+2) < (n_1+1)*(n1_+1) {
 			// peak to right of n11
@@ -319,7 +350,7 @@ func kt_fisher_exact(n11, n12, n21, n22 int, _left, _right, two *float64) float6
 		*_left = 1
 		*_right = 0
 		*two = 0
-		return 0.0
+		return 0
 	}
 
 	// left tail

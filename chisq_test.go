@@ -53,7 +53,7 @@ func TestChiSquaredTest22(t *testing.T) {
 		if differ(wantPval, gotChi2pval) {
 			t.Fatalf("case %v: want %v, got %v", i, wantPval, gotChi2pval)
 		}
-		_, _, fisherPval := FisherExactTest22(c.dat[0], c.dat[1], c.dat[2], c.dat[3])
+		_, _, fisherPval, _ := FisherExactTest22(c.dat[0], c.dat[1], c.dat[2], c.dat[3])
 		diff := math.Abs(fisherPval - gotChi2pval)
 		_ = diff
 		if (fisherPval < 0.05 && gotChi2pval > 0.05) ||
@@ -65,8 +65,11 @@ func TestChiSquaredTest22(t *testing.T) {
 
 type testcase struct {
 	dat   []int
-	xstat float64
-	xpval float64
-	yates bool
-	alt   AltHypothesis // for fet_test
+	xstat float64 // chisq only
+	yates bool    // chisq only
+	xpval float64 // chisq and fet
+	// for fet_test only
+	alt               AltHypothesisFET
+	nullValue         float64
+	oddsRatioEstimate float64
 }

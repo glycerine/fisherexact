@@ -13,8 +13,9 @@ to larger tables, but this
 repo only does 2x2 tables at the moment.
 
 ~~~
-// FisherExactTest22 computes Fisher's Exact test
-// for independence on a 2x2 contingency table.
+// fisherexact.TwoSided22() computes Fisher's Exact test
+// for independence in a 2x2 contingency table, and
+// returns the p-value for the two-sided null hypothesis.
 //
 // n11  n12  | n1_
 // n21  n22  | n2_
@@ -22,15 +23,9 @@ repo only does 2x2 tables at the moment.
 // n_1  n_2  | n
 //
 // is the layout assumed.
-// Three p-values are returned, for each of three
-// alternative hypotheses.
-func FisherExactTest22(n11, n12, n21, n22 int) (
-  less, 
-  greater, 
-  twoSidedPvalue float64, // you want this, generally.
-  )
+func TwoSided22(n11, n12, n21, n22 int) (twoSidedPvalue float64)
 
-// ChiSquaredTest22 input is the same.
+// ChiSquaredTest22 assumes the same layout.
 func ChiSquaredTest22(n11, n12, n21, n22 int, yates bool) (
   pval float64,
   )
