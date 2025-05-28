@@ -54,6 +54,24 @@ of which was first
 
 ~~~
 
+To provide intuition, you might say that this
+is what you expect if the groups and the
+outcomes are independent:
+
+~~~
+   2     2 |  4
+   2     2 |  4
+ ----------+-----
+   4     4 |  n=8
+~~~
+However, due to random variation, even with
+no predictive power, you will see lots of variations
+where the cell counts are not exactly the
+expected 2. Summing up the probablities of
+all the possible null hypothesis tables,
+given that the marginals (the right side
+and bottom side) are fixed, is what the FET does.
+
 The FET here evaluates a 2x2 contingency table for independence,
 returning p-values; typically you'll use the two-sided
 p-value by default. Technically this is a test of
