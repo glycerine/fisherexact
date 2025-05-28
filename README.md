@@ -41,7 +41,7 @@ table. As the wikipedia article says,
 
 https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 
-For comparison, we provide a ChiSquared implementation
+For comparison, we provide a Chi-squared test implementation
 based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen Mosher) 
 required was copied in to avoid depending
