@@ -66,7 +66,29 @@ https://github.com/gonum/gonum/
 https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mathext/internal/cephes
 
 ------
-# alternative hypotheses: the fisher.test R docs 
+# alternative hypotheses
+
+The R docs for fisher.test explain the hypotheses tested /
+corresponding to the returned p-values (left, right,
+two-sided):
+
+> For 2 by 2 tables, the null of conditional independence is
+> equivalent to the hypothesis that the odds ratio equals one.
+> ‘Exact’ inference can be based on observing that in general, given
+> all marginal totals fixed, the first element of the contingency
+> table has a non-central hypergeometric distribution with
+> non-centrality parameter given by the odds ratio (Fisher, 1935).
+> The alternative for a one-sided test is based on the odds ratio,
+> so ‘alternative = "greater"’ is a test of the odds ratio being
+> bigger than ‘or’ [the odd-ratio, which in this Go package is assumed = 1.0].
+>
+> Two-sided tests are based on the probabilities of the tables, and
+> take as ‘more extreme’ all tables with probabilities less than or
+> equal to that of the observed table, the p-value being the sum of
+> such probabilities.
+
+The fisher.test R docs may be helpful here. See 
+the literature references at the end for primary sources.
 
 ~~~
 > ?fisher.test
