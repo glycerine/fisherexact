@@ -11,6 +11,14 @@ The FET, like the Chi-squared, can be generalized
 to larger tables, but this
 repo only does 2x2 tables at the moment.
 
+~~~
+//
+// n11  n12  | n1_
+// n21  n22  | n2_
+// ----------+-----
+// n_1  n_2  | n
+~~~
+
 The FET can be used for large and small data. 
 For numerical efficiency, the FET is typically 
 deployed when small data makes the Chi-squared test's 
