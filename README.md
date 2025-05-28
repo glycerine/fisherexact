@@ -101,7 +101,7 @@ two-sided):
 > such probabilities.
 
 The full fisher.test R docs may be helpful here; type `?fisher.test`
-to view them. See the literature references at the end for more.
+in R to view them. See the literature references at the end for more.
 
 fisher.test doc source: https://github.com/wch/r-source/blob/8329caa0d89a7e036663e1247d4f4ee7a55e756a/src/library/stats/man/fisher.test.Rd#L2
 
