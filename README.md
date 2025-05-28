@@ -42,15 +42,16 @@ correspond to the two groups (which liquid poured first).
 The columns correspond to the two outcomes (her prediction).
 
 ~~~
-  prediction 
+ her prediction 
+  (outcome)
 of which was first
 
   milk  tea       groups:
    4     0 |  4 = milk actually first (group 1)
-   0     4 |  4 = tea actually first (group 2)
+   0     4 |  4 =  tea actually first (group 2)
  ----------+-----
    4     4 |  n=8
-   outcome
+
 ~~~
 
 The FET here evaluates a 2x2 contingency table for independence,
