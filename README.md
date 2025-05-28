@@ -89,6 +89,7 @@ based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen L. Moshier) 
 required was copied in to avoid having to import
 a large dependency for a small project/single test.
+Thus fisherexact is self-contained.
 
 https://en.wikipedia.org/wiki/Chi-squared_test
 
