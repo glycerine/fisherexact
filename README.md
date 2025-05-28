@@ -87,8 +87,8 @@ For this reason and for general comparison, we
 provide a Chi-squared test implementation
 based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen L. Moshier) 
-required was copied in to avoid requiring
-a large dependency for small projects.
+required was copied in to avoid having to import
+a large dependency for a small project/single test.
 
 https://en.wikipedia.org/wiki/Chi-squared_test
 
