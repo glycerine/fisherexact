@@ -60,3 +60,4 @@ Chi-squared distribution computation copied from gonum's
 cephes package. See cephes/ for details/license(3-clause BSD).
 https://github.com/gonum/gonum/
 
+https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mathext/internal/cephes
