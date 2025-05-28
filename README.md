@@ -4,9 +4,14 @@ fisherexact: Fisher's Exact Test in Go
 Fisher's Exact test (FET) is one of the most useful
 statistical tests. 
 
-FET evaluates a contingency table for independence.
+The FET here evaluates a 2x2 contingency table for independence,
+returning a p-value.
 
-FET can be used for large and small data. 
+The FET, like the Chi-squared, can be generalized 
+to larger tables, but this
+repo only does 2x2 tables at the moment.
+
+The FET can be used for large and small data. 
 For numerical efficiency, the FET is typically 
 deployed when small data makes the Chi-squared test's 
 asymptotic assumptions unreliable, but it
@@ -19,6 +24,12 @@ table. As the wikipedia article says,
 > where the chi-squared test is appropriate.
 
 https://en.wikipedia.org/wiki/Fisher%27s_exact_test
+
+For comparison, we provide a ChiSquared implementation
+based on gonum/cephes calculations. The small
+cephes subpackage (Netlib code by Stephen Mosher) 
+required was copied in to avoid depending
+on the full gonum library.
 
 ----
 author: Jason E. Aten, Ph.D.
