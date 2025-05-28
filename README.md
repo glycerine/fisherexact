@@ -23,4 +23,6 @@ https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 ----
 author: Jason E. Aten, Ph.D.
 
+derived from https://github.com/samtools/htslib/ (MIT license)
+
 License: MIT
