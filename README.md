@@ -40,6 +40,17 @@ func FisherExactTest22(n11, n12, n21, n22 int) (
    )
 ~~~
 
+The odds-ratio examined here, assuming rows are groups
+and columns are outcomes, is defined as follows.
+
+~~~
+odds1 = odds of outcome 1 in group 1 = n11/n12
+
+odds2 = odds of outcome 1 in group 2 = n21/n22
+
+OR = odds ratio = odds1/odds2 = (n11 * n22)/(n12 * n21)
+~~~
+
 The FET can be used for large and small data. 
 For numerical efficiency, the FET is typically 
 deployed when small data makes the Chi-squared test's 
