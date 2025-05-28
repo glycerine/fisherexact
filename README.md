@@ -24,7 +24,7 @@ repo only does 2x2 tables at the moment.
 // is the layout assumed.
 // Three p-values are returned, for each of three
 // alternative hypotheses.
-FisherExactTest22(n11, n12, n21, n22 int) (left, right, two float64)
+FisherExactTest22(n11, n12, n21, n22 int) (less, greater, two float64)
 
 // ChiSquaredTest22 input is the same.
 func ChiSquaredTest22(n11, n12, n21, n22 int, yates bool) (pval float64)
