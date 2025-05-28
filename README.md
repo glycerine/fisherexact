@@ -70,7 +70,7 @@ https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mat
 # alternative hypotheses
 
 The R docs for fisher.test explain the hypotheses tested /
-corresponding to the returned p-values (left, right,
+corresponding to the returned p-values (less, greater,
 two-sided):
 
 > For 2 by 2 tables, the null of conditional independence is
