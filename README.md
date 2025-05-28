@@ -80,7 +80,7 @@ table are fixed and conditioned on. What is a p-value?
 Something Fisher invented, that's what. More detail is
 outside the scope of this introduction, as p-values are
 famously subtle and hard to convey with both 
-accuracy and brevity[5]. 
+accuracy and brevity[5]. See https://en.wikipedia.org/wiki/P-value
 
 The FET, like Pearson's Chi-squared test for
 categorical data, can be generalized to larger tables,
