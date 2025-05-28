@@ -61,12 +61,15 @@ OR = odds ratio = odds1/odds2 = (n11 * n22)/(n12 * n21)
 ~~~
 
 The FET can be used for large and small data. 
-For numerical efficiency, the FET is typically 
-deployed when small data makes Pearson's Chi-squared test
-estimates unreliable. The nice
-thing about the FET is that it works on small data too.
-It is appropriate for any size of data. As the 
-wikipedia article says,
+The FET is typically deployed when small data 
+makes Pearson's Chi-squared test estimates unreliable. The nice
+thing about the FET is that it is actually appropriate 
+for any size of data. The only reason not to
+just always use the FET is that if the counts become very large,
+the computation can have numerical stability issues;
+although many of these have been addressed herein.
+
+As the wikipedia article says of the calculations,
 
 > [The FET] becomes difficult to calculate with 
 > large samples or well-balanced tables, but 
@@ -75,7 +78,13 @@ wikipedia article says,
 
 https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 
-For comparison, we provide a Chi-squared test implementation
+Hence for big counts, it is worth running a
+Chi-squared too just to validate that the 
+floating point calculations didn't go crazy
+with underflow or overflow or whatnot.
+
+For this reason and for general comparison, we 
+provide a Chi-squared test implementation
 based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen L. Moshier) 
 required was copied in to avoid depending
