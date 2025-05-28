@@ -92,6 +92,9 @@ two-sided):
 The full fisher.test R docs may be helpful here. See 
 the literature references at the end for primary sources.
 
+Note that no R code is used in this fisherexact Go package,
+and thus the GPL does not apply to its code.
+
 ~~~
 > ?fisher.test
 fisher.test               package:stats                R Documentation
