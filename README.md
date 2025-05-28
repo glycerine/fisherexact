@@ -149,6 +149,7 @@ As the wikipedia article says of the calculations,
 > where the chi-squared test is appropriate.
 
 https://en.wikipedia.org/wiki/Fisher%27s_exact_test
+https://en.wikipedia.org/wiki/Chi-squared_test
 
 Hence for big counts, it is worth running a
 Chi-squared too just to validate that the 
@@ -162,8 +163,6 @@ cephes subpackage (Netlib code by Stephen L. Moshier)
 required was copied in to avoid having to import
 a large dependency for a small project/single test.
 Thus fisherexact is self-contained.
-
-https://en.wikipedia.org/wiki/Chi-squared_test
 
 ----
 Author: Jason E. Aten, Ph.D.
