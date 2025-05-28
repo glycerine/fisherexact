@@ -11,6 +11,36 @@ the single most influential scientist of all time
 Fisher founded the modern fields of both statistics 
 and population genetics.
 
+The story of the invention of the FET makes it memorable[3],
+and helps us define the contigency table.
+
+Fisher, drawn by a treasure trove of 80 years of
+unanalyzed agricultural crop data, was working at Rothamsted
+Experimental Station, in Hertfordshire, in 1919. One
+day, while making tea, he offered a colleague a cup
+of tea he had freshly poured. She declined, saying 
+she preferred the taste when the milk was first poured
+into the cup before the tea. She said she could
+tell the difference. Fisher scoffed at this idea.
+
+Overhearing this, another colleague said, "let's 
+test her!" After eight randomly ordered cups
+were correctly identified blindfolded, as either
+"milk-first" or "tea-first", Fisher was driven to 
+calculate the odds of such an occurance simply due to chance. 
+This was the famous "lady tasting tea" experiment.
+
+To make our terminology concrete, the _groups_ in this
+example are "actually-milk-first", and "actually-tea-first".
+
+The _outcomes_ are "she-said-milk-first", and "she-said-tea-first".
+
+If we draw a square, and divide it into four quadrants,
+the verticdal axis could be labelled "actual", and the
+horizontal "prediction". The two rows of the box
+correspond to the two groups (which liquid poured first). 
+The columns correspond to the two outcomes (her prediction).
+
 The FET here evaluates a 2x2 contingency table for independence,
 returning p-values; typically you'll use the two-sided
 p-value by default. Technically this is a test of
@@ -62,8 +92,11 @@ OR = odds ratio = odds1/odds2 = (n11 * n22)/(n12 * n21)
 
 The FET can be used for large and small data. 
 The FET is typically deployed when small data 
-makes Pearson's Chi-squared test estimates unreliable. The nice
-thing about the FET is that it is actually appropriate 
+makes Pearson's Chi-squared test estimates unreliable
+(classically less than a count of 10 in any
+quadrant, but see [4]). 
+
+The nice thing about the FET is that it is actually appropriate 
 for any size of data. The only reason not to
 just always use the FET is that if the counts become very large,
 the computation can have numerical stability issues;
@@ -111,6 +144,11 @@ https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mat
 http://csyue.nccu.edu.tw/ch/The%20Logic%20of%20Inductive%20Inference.pdf
 
 [2] https://simplystatistics.org/posts/2014-02-17-repost-ronald-fisher-is-one-of-the-few-scientists-with-a-legit-claim-to-most-influential-scientist-ever/
+
+[3] https://en.wikipedia.org/wiki/Muriel_Bristol
+
+[4] Larntz, Kinley (1978). "Small-sample comparisons of exact levels for chi-squared goodness-of-fit statistics". Journal of the American Statistical Association. 73 (362): 253–263.
+https://www.jstor.org/stable/2286650
 
 ------
 # alternative hypotheses
