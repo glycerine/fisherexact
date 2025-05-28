@@ -89,7 +89,6 @@ https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mat
 
 [1] Fisher, R. A. (1935).  The logic of inductive inference.  _Journal
  of the Royal Statistical Society Series A_, *98*, 39-54.
- doi:10.2307/2342435 <https://doi.org/10.2307/2342435>.
 http://csyue.nccu.edu.tw/ch/The%20Logic%20of%20Inductive%20Inference.pdf
 
 ------
