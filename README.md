@@ -64,8 +64,8 @@ outcomes are independent:
  ----------+-----
    4     4 |  n=8
 ~~~
-However, due to random variation, even with
-no predictive power, you will see lots of variations
+However, due to random variation, even if the lady
+has no predictive power, you will see lots of variations
 where the cell counts are not exactly the
 expected 2. Summing up the probablities of
 all the possible null hypothesis tables,
