@@ -261,7 +261,7 @@ func hypergeo_acc(n11, n1_, n_1, n int, aux *hgacc_t) float64 {
 //
 // Three p-values are returned, for each of three
 // alternative hypotheses. The final value
-// gives the test statistic.
+// gives the probability of the current table.
 func FisherExactTest22(n11, n12, n21, n22 int) (lessPvalue, greaterPvalue, twoSidedPvalue, probCurrentTable float64) {
 	if n11 < 0 {
 		panic(fmt.Sprintf("n11 was %v. must be >= 0.", n11))
@@ -281,7 +281,8 @@ func FisherExactTest22(n11, n12, n21, n22 int) (lessPvalue, greaterPvalue, twoSi
 
 // TwoSidedTest22 computes Fisher's Exact test
 // for independence in a 2x2 contingency table, and
-// returns the p-value for the two-sided null hypothesis.
+// returns the p-value for the two-sided null hypothesis
+// that the odds-ratio is 1.
 //
 // n11  n12  | n1_
 // n21  n22  | n2_

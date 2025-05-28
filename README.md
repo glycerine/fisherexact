@@ -15,7 +15,8 @@ repo only does 2x2 tables at the moment.
 ~~~
 // fisherexact.TwoSided22() computes Fisher's Exact test
 // for independence in a 2x2 contingency table, and
-// returns the p-value for the two-sided null hypothesis.
+// returns the p-value for the two-sided null hypothesis
+// that the odds-ratio is 1.
 //
 // n11  n12  | n1_
 // n21  n22  | n2_
@@ -29,6 +30,14 @@ func TwoSided22(n11, n12, n21, n22 int) (twoSidedPvalue float64)
 func ChiSquaredTest22(n11, n12, n21, n22 int, yates bool) (
   pval float64,
   )
+  
+// Also available for testing 1-sided hypotheses.
+func FisherExactTest22(n11, n12, n21, n22 int) (
+   lessPvalue, 
+   greaterPvalue, 
+   twoSidedPvalue, 
+   probCurrentTable float64,
+   )
 ~~~
 
 The FET can be used for large and small data. 
