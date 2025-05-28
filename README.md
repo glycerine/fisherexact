@@ -2,8 +2,8 @@ fisherexact: Fisher's Exact Test in Go
 ===========
 
 Fisher's Exact test (FET) is one of the most useful
-statistical tests[1]. A fun fact about [Sir Ronald A. Fisher]
-(https://en.wikipedia.org/wiki/Ronald_Fisher) is that
+statistical tests[1]. A fun fact about (Sir Ronald A. Fisher)
+[https://en.wikipedia.org/wiki/Ronald_Fisher] is that
 based on citation counts, he is considered to be
 the single most influential scientist of all time.
 He founded the modern fields of both statistics 
