@@ -5,8 +5,8 @@ Fisher's Exact test (FET) is one of the most useful
 statistical tests. 
 
 The FET here evaluates a 2x2 contingency table for independence,
-returning a p-values; typically you'll use the two-sided
-p-value by default.
+returning p-values; typically you'll use the last, two-sided
+p-value, by default.
 
 The FET, like the Chi-squared, can be generalized 
 to larger tables, but this
