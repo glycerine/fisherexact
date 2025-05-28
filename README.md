@@ -85,6 +85,8 @@ accuracy and brevity[5]. See https://en.wikipedia.org/wiki/P-value
 The FET, like Pearson's Chi-squared test for
 categorical data, can be generalized to larger tables,
 but this repo only does 2x2 tables at the moment.
+R's built-in/core fisher.test can handle larger tables.
+https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/fisher.test
 
 ~~~
 // fisherexact.TwoSided22() computes Fisher's Exact test
