@@ -17,9 +17,9 @@ p-value by default. Technically this is a test of
 conditional independence, as the marginals of the
 table are fixed and conditioned on.
 
-The FET, like the Chi-squared, can be generalized 
-to larger tables, but this
-repo only does 2x2 tables at the moment.
+The FET, like Pearson's Chi-squared test for
+categorical data, can be generalized to larger tables,
+but this repo only does 2x2 tables at the moment.
 
 ~~~
 // fisherexact.TwoSided22() computes Fisher's Exact test
@@ -62,8 +62,8 @@ OR = odds ratio = odds1/odds2 = (n11 * n22)/(n12 * n21)
 
 The FET can be used for large and small data. 
 For numerical efficiency, the FET is typically 
-deployed when small data makes the Chi-squared test's 
-asymptotic assumptions unreliable. The nice
+deployed when small data makes Pearson's Chi-squared test
+estimates unreliable. The nice
 thing about the FET is that it works on small data too.
 It is appropriate for any size of data. As the 
 wikipedia article says,
