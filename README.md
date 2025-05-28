@@ -88,7 +88,7 @@ two-sided):
 > equal to that of the observed table, the p-value being the sum of
 > such probabilities.
 
-The fisher.test R docs may be helpful here. See 
+The full fisher.test R docs may be helpful here. See 
 the literature references at the end for primary sources.
 
 ~~~
