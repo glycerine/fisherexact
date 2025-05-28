@@ -154,7 +154,7 @@ Chi-squared too just to validate that the
 floating point calculations didn't go crazy
 with underflow or overflow or whatnot.
 
-For this reason and for general comparison, we 
+For this reason and for general utility, we 
 provide a Chi-squared test implementation
 based on gonum/cephes calculations. The small
 cephes subpackage (Netlib code by Stephen L. Moshier) 
