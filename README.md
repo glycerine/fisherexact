@@ -41,6 +41,18 @@ horizontal "prediction". The two rows of the box
 correspond to the two groups (which liquid poured first). 
 The columns correspond to the two outcomes (her prediction).
 
+~~~
+  prediction 
+of which was first
+
+  milk  tea       groups:
+   4     0 |  4 = milk actually first (group 1)
+   0     4 |  4 = tea actually first (group 2)
+ ----------+-----
+   4     4 |  n=8
+   outcome
+~~~
+
 The FET here evaluates a 2x2 contingency table for independence,
 returning p-values; typically you'll use the two-sided
 p-value by default. Technically this is a test of
