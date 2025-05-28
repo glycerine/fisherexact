@@ -10,8 +10,8 @@ He founded the modern fields of both statistics
 and population genetics.
 
 The FET here evaluates a 2x2 contingency table for independence,
-returning p-values; typically you'll use the last, two-sided
-p-value, by default. Technically this is a test of
+returning p-values; typically you'll use the two-sided
+p-value by default. Technically this is a test of
 conditional independence, as the marginals of the
 table are fixed and conditioned on.
 
