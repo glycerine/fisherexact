@@ -170,16 +170,10 @@ Author: Jason E. Aten, Ph.D.
 
 License: MIT, same as the upstream C++. 
 
-Alternatively the 3-clause BSD license, the
-same as Go, can be used for any or all of my Go code
-that is distinct enough to be deemed entirely my
-copyright and thus not subject to the htslib's
-MIT license.
-
 FET source material in C++ from https://github.com/samtools/htslib/ (MIT license)
 
 Chi-squared distribution computation copied from gonum's
-cephes package. See cephes/ for details/license(3-clause BSD).
+cephes package. See cephes/ for details/license (3-clause BSD).
 https://github.com/gonum/gonum/
 
 https://github.com/gonum/gonum/tree/720fcb9699a9e01862309471af0aac7eb56240bc/mathext/internal/cephes
