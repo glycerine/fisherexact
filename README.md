@@ -168,9 +168,9 @@ Thus fisherexact is self-contained.
 ----
 Author: Jason E. Aten, Ph.D.
 
-License: MIT, same as the upstream C++. 
+License: MIT, same as the upstream C code. 
 
-FET source material in C++ from https://github.com/samtools/htslib/ (MIT license)
+FET source material in C from https://github.com/samtools/htslib/ (MIT license)
 
 Chi-squared distribution computation copied from gonum's
 cephes package. See cephes/ for details/license (3-clause BSD).
