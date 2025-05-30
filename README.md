@@ -168,7 +168,13 @@ Thus fisherexact is self-contained.
 ----
 Author: Jason E. Aten, Ph.D.
 
-License: MIT
+License: MIT, same as the upstream C++. 
+
+Alternatively the 3-clause BSD license, the
+same as Go, can be used for any or all of my Go code
+that is distinct enough to be deemed entirely my
+copyright and thus not subject to the htslib's
+MIT license.
 
 FET source material in C++ from https://github.com/samtools/htslib/ (MIT license)
 
