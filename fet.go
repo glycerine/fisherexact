@@ -8,7 +8,7 @@ import (
 // reference
 // https://en.wikipedia.org/wiki/Fisher%27s_exact_test
 
-// based on htslib (MIT licensed) from a decade ago.
+// based on htslib (MIT licensed: see the LICENSE file).
 // today's htslib can be found https://github.com/samtools/htslib
 
 // Log gamma function
